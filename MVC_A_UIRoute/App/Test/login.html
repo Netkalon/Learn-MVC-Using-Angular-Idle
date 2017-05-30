@@ -1,0 +1,67 @@
+﻿<div class="container">
+    <div class="row" style="margin-top:5%">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <div class="panel panel-default boxshadow">
+                <div class="panel-heading" style="color:#ffffff; background-color: #3276b1;">
+                    <strong> Sign in to continue</strong>
+                </div>
+                <div class="panel-body">
+                    <form role="form" >
+                        <fieldset>
+                            <div class="row">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                    <div class="center">
+
+                                        <img class="img-circle" style="height:100px;width:100px" src="../../Content/user/02.jpg" />
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4"></div>
+
+
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-sm-12 col-md-10  col-md-offset-1 ">
+                                    <span class="alert-danger">{{Message}}</span>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-user">User Name</i>
+                                            </span>
+                                            <input class="form-control txtheight" placeholder="Username" id="UserName" ng-model="UserName" name="UserName" type="text" autofocus>
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-lock">Password</i>
+                                            </span>
+                                            <input class="form-control txtheight" placeholder="Password" id="Password" ng-model="Password" name="Password" type="password" value="">
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="form-group">
+                                        <input type="button" ng-click="login()" id="loginclick" class="btn btn-lg btn-primary btn-block" value="Sign in">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    #dis {
+        color: orangered;
+    }
+
+    .txtheight {
+        height: 31px;
+    }
+</style>
